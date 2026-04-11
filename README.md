@@ -52,9 +52,9 @@ src/
 │   └── auth.js            # requireAuth (redirect /login)
 ├── routes/
 │   ├── auth.js            # /login, /callback, /logout
-│   └── homeRoute.js       # /, /admin (protected)
+│   └── protectedRoute.js  # /, /admin (cần requireAuth)
 └── controllers/
-    └── homeController.js  # Handler trang chủ & admin
+    └── protectedController.js  # Dashboard & admin
 ```
 
 ## Luồng & route

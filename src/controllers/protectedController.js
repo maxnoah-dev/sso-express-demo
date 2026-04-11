@@ -1,4 +1,4 @@
-function getHomePage(req, res) {
+function getDashboard(req, res) {
   res.json({
     message: "Chào mừng vào Internet Banking",
     user: req.session.user,
@@ -15,4 +15,4 @@ function getAdminPanel(req, res) {
   res.json({ message: "Admin panel" });
 }
 
-module.exports = { getHomePage, getAdminPanel };
+module.exports = { getDashboard, getAdminPanel };
